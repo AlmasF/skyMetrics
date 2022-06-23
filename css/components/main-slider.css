@@ -1,0 +1,173 @@
+/* Собственно сам слайдер */
+.main-slider{
+    position: relative;
+    margin-bottom: 55px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.main-slider .slider-item img {
+    object-fit: cover;
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.main-slider .slider-item {
+    position: relative;
+    max-width: 1180px;
+    height: 370px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-slider .slider-item span.desc {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-slider .slider-item span.desc h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'calt' off;
+    color: #FFFFFF;    
+}
+
+.main-slider .slider-item span.desc p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'calt' off;
+    color: #FFFFFF;    
+}
+
+.main-slider .prev {
+    margin-left: -20px;
+}
+
+.main-slider .next {
+    margin-right: -20px;
+}
+/* Кнопки вперед и назад */
+.main-slider .prev, .main-slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+}
+.main-slider .next {
+    right: 0;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.main-slider .prev,
+.main-slider .next {
+    background-color: #fff;
+    color: #0070D7;
+}
+
+.main-slider .prev:hover,
+.main-slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+.main-slider .main-slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px; /* Need a specific value to work */
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-slider.slider-dots_item {
+    width: 32px;
+    border-radius: 8px;
+}
+
+.active-slider,
+.slider-dots_item:hover {
+    background-color: #45A5EE;
+}
+/* Анимация слайдов */
+.main-slider .slider-item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.7s;
+    animation-name: fade;
+    animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

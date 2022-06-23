@@ -1,0 +1,264 @@
+.signin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #FFF;
+    gap: 125px;
+}
+
+.signin h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #15114E;
+    margin-bottom: 40px;
+}
+
+.signin form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.signin form a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.18%;
+    color: #349EFF;
+}
+
+.signin label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.18%;
+    color: #15114E;    
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.signin input {
+    background: #FFFFFF;
+    border: 1px solid #C5CDD5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 25px;
+    padding: 14px 21.5px;
+}
+
+.signin select {
+    background: #FFFFFF;
+    border: 1px solid #C5CDD5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 25px;
+    padding: 0px 21.5px;
+
+    background-color: white;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, #525252 50%),
+        linear-gradient(135deg, #525252 50%, transparent 50%);
+    background-position:
+        calc(100% - 20px) calc(1em + 5px),
+        calc(100% - 15px) calc(1em + 5px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.signin select.clicked {
+    background-image:
+        linear-gradient(45deg, #525252 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #525252 50%);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    outline: 0;
+}
+
+.signin select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+  
+
+.signin input:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+.signin form .signin-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.signin-options input {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.signin form .signin-options a {
+    margin-left: 44px;
+}
+
+.signin form .signin-options label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.signin-options label .checkbox {
+    border: 1px solid #C5CDD5;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 0.2s;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 18px;
+}
+
+.signin-options input:checked+label .checkbox{
+    background: #0070D7;
+    border: none;
+    color: #fff;
+}
+
+.signin-options label {
+    margin-bottom: 0px;
+}
+
+.signin form button {
+    background: #0070D7;
+    box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    width: 350px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;    
+}
+
+.signin form .signin-help {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signin form .signin-help p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.18%;
+    color: #15114E;
+    margin-right: 10px;
+}
+
+.signin .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+    margin-bottom: 40px;
+}
+
+.signin .grid .phone-item {
+    position: relative;
+}
+
+.signin .grid .grid-item .phone {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    top: 46px;
+    left: 15px;
+}
+
+.signin .grid .grid-item .phone p {
+    margin-left: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.signin .grid .phone-item input {
+    padding-left: 90px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.signin div.password {
+    position: relative;
+}
+
+.signin .grid-item.password span {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

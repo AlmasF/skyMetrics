@@ -1,0 +1,443 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 130px;
+}
+
+header a {
+    color: #000;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+header .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+header .sign button {
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background: #0070D7;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    max-width: 615px;
+    width: 100%;
+}
+
+header .search span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background: #FFF;
+    border: 1px solid #C5CDD5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+header .search .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 505px;
+    width: 100%;
+    height: 40px;
+    margin-right: 19px;
+}
+
+header .search .search-input input {
+    height: 100%;
+    padding: 8px 20px;
+    background: #FFF;
+    border-top: 1px solid #B0BDC6;
+    border-bottom: 1px solid #B0BDC6;
+    border-left: 1px solid #B0BDC6;
+    border-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 465px;
+    width: 100%;
+}
+
+header .search .search-input input:focus-visible {
+    outline: 1px solid #000;
+}
+
+header .search .search-input button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #b0bdc6;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+header .search img {
+    cursor: pointer;
+}
+
+header .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .user .user-desc {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+header .user .user-desc span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .user .user-desc p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #15114E;
+}
+
+header .user .user-desc p.bold {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150.18%;
+    color: #15114E;
+    margin-left: 5px;
+}
+
+header .user .user-desc p.blue {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150.18%;
+    text-align: center;
+    color: #349EFF;
+    background: #E1F0FF;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-right: 5px;
+}
+
+header .user .user-desc p.underline {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 151.68%;
+    text-decoration-line: underline;
+    color: #555F6F;
+}
+
+header .user .user-desc span p {
+    width: fit-content;
+}
+
+header .user .user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FFF;
+    border: 1px solid #C5CDD5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+header .user .user-avatar img:first-child{
+    padding: 10px;
+}
+
+header .user .user-avatar .dropdown {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 255px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background: #EEF2F5;
+    overflow: hidden;
+    height: 0px;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-shadow: 1px 1px #525252;
+}
+
+
+header .user .user-avatar .dropdown.show {
+    height: 224px;
+}
+
+header .user .user-avatar .dropdown .name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 14.5px 19px;
+    height: 65px;
+}
+
+header .user .user-avatar .dropdown .plan {
+    width: 255px;
+    height: 70px;
+    background: #E7EFF5;
+    border: 1px solid #C5CDD5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 10px 11px 19px;
+    height: 70px;
+}
+
+header .user .user-avatar .dropdown .plan h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.18%;
+    color: #15114E;
+}
+
+header .user .user-avatar .dropdown .plan p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #82868C;
+}
+
+header .user .user-avatar .dropdown .plan a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: #555F6F;    
+}
+
+header .user .user-avatar .dropdown .settings {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .user .user-avatar .dropdown .settings span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 11px 10px 10px 19px;
+    height: 45px;
+}
+
+header .user .user-avatar .dropdown .settings a{
+    width: 100%;
+}
+
+header .user .user-avatar .dropdown .settings a:hover{
+    background-color: #C5CDD5;
+}
+
+header .user .user-avatar .triangle {
+    position: absolute;
+    bottom: -12px;
+    right: 10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #eef2f5;
+    display: none;
+}
+
+header .user .user-avatar .triangle.show {
+    display: block;
+}
+
+header .search span {
+    position: relative;
+}
+
+header .search span img:first-child {
+    padding: 13px 11px;
+}
+
+header .search span .dropdown {
+    position: absolute;
+    width: 665px;
+    height: 410px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    top: 50px;
+    left: -200px;
+    border: 1px solid #C5CDD5;;
+    border-radius: 5px;
+    cursor: auto;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+header .search span .dropdown.hide {
+    height: 0px;
+    border: none;
+}
+
+header .search span .dropdown .dropdown-menu {
+    width: 255px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border-right: #C5CDD5 1px solid;
+}
+
+header .search span .dropdown .dropdown-menu h3 {
+    height: 50px;
+    padding: 11px 23px;
+    background-color: #EEF2F5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #555F6F;
+    width: 100%;
+}
+
+header .search span .dropdown .dropdown-menu p {
+    height: 45px;
+    padding: 11px 23px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #555F6F;
+    width: 100%;
+    cursor: pointer;
+}
+
+header .search span .dropdown .dropdown-menu p:hover {
+    background-color: #e7eff5;
+}
+
+header .search span .dropdown .dropdown-menu p.selected {
+    color: #0070D7;
+    background-color: #E7EFF5;
+}
+
+header .search span .dropdown .dropdown-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 30px;
+    width: 410px;
+}
+
+header .search span .dropdown .dropdown-categories.hide {
+    display: none;
+    overflow: hidden;
+}
+
+header .search span .dropdown .dropdown-categories h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0070D7;
+    margin-bottom: 13px;
+}
+
+header .search span .dropdown .dropdown-categories .grid {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+header .search span .dropdown .dropdown-categories .grid div {
+    width: 100px;
+}
+
+header .search span .dropdown .dropdown-categories .grid div h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #82868C;
+    border-bottom: 1px solid rgb(7, 51, 107, 0.1);
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
+
+header .search span .dropdown .dropdown-categories .grid div p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #82868C;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}

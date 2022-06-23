@@ -1,0 +1,43 @@
+{
+  "name": "RobotForLegalDep",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AdvanceExcel": "[1.0.9]",
+    "UiPath.Excel.Activities": "[2.7.1-ce]",
+    "UiPath.GSuite.Activities": "[1.3.1]",
+    "UiPath.Mail.Activities": "[1.7.1-ce]",
+    "UiPath.System.Activities": "[19.10.0-ce]",
+    "UiPath.UIAutomation.Activities": "[19.10.0-ce]",
+    "UiPathTeam.Gmail.Activities": "[1.0.6822.33137]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.10.0.361",
+  "projectVersion": "1.0.6",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfos": []
+  },
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "VisualBasic"
+}

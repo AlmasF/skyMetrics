@@ -1,0 +1,142 @@
+.bots {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+}
+
+.bots .bots-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bots h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    
+    /* identical to box height, or 112% */
+    letter-spacing: -0.02em;
+    font-feature-settings: 'calt' off;
+    
+    color: #07336B;
+}
+
+.bots-title a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    color: #0D59EF;
+    position: relative;
+}
+
+.bots-title img {
+    transition: 0.2s;
+    position: absolute;
+    right: 0;
+    top: 10;
+}
+
+
+.bots-title a p {
+    margin-right: 20px;
+}
+
+.bots-title a:hover img {
+    margin-right: -5px;
+}
+
+.bots-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."; 
+}
+
+.bots-grid--item {
+    background: #FFFFFF;
+    border: 1px solid #EBEFF6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 280px;
+    height: 195px;
+    padding: 20.5px 10px 20.5px 20px;
+}
+
+.bots-grid--item .desc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15.5px;
+}
+
+.bots-grid--item .desc h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #042552;    
+}
+
+.bots-grid--item .desc img {
+    border-radius: 50%;
+}
+
+.bots-grid--item .desc p {
+    margin-bottom: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #042552;
+    opacity: 0.7;
+}
+
+.bots-grid--item p {
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #042552;
+    opacity: 0.7;
+}
+
+.bots-grid--item button {
+    width: 169px;
+    height: 30px;
+    
+    border: 1px solid #0070D7;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #fff;
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #0070D7;
+    margin-right: 51px;
+}

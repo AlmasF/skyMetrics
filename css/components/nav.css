@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9px 135px;
+    background: #EEF2F5;
+}
+
+nav .desc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
+}
+
+nav .desc a:first-of-type p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150.18%;
+    color: #07336B;
+}
+
+nav .desc p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #82868C;
+    cursor: pointer;
+}
+
+nav .lang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+nav .lang p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #A3ADB4;
+}

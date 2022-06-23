@@ -1,0 +1,54 @@
+h2.taxes {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    
+    /* or 112% */
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'calt' off;
+    
+    color: #07336B;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+form.taxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.taxes input {
+    width: 700px;
+    height: 50px;
+    border: 1px solid #07336B;
+    border-radius: 10px;
+
+    padding: 5px 10px;
+    font-size: 36px;
+    font-family: 'Open Sans';
+}
+
+button.blue {
+    background-color: #1957a9;
+    color: #fff;
+    border: 0;
+    padding: 10px 28px;
+    height: 52px;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+
+button.blue:hover {
+    background-color: #07336B;
+}
+
+button.margin {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,114 @@
+.popular {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.popular .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popular .title h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #15114E;    
+}
+
+.popular .title a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    color: #0D59EF;
+    position: relative;
+}
+
+.popular .title img {
+    transition: 0.2s;
+    position: absolute;
+    right: 0;
+    top: 10;
+}
+
+.popular .title a p {
+    margin-right: 20px;
+}
+
+.popular .title a:hover img {
+    margin-right: -5px;
+}
+
+.popular-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    position: relative;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.slick-slide {
+    min-width: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slick-list {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0070D7;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #525252 ;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
